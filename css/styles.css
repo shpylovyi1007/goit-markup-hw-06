@@ -416,7 +416,6 @@ img {
 
 .footer-box {
   background-color: #2e2f42;
-  flex-shrink: 0;
   padding: 100px 0;
 }
 
@@ -710,7 +709,6 @@ img {
 .form-checkbox {
   stroke-width: 1px;
   stroke: rgba(46, 47, 66, 0.4);
-  margin-right: 8px;
 }
 
 .visually-hidden {
@@ -786,4 +784,134 @@ img {
 .form-button:hover,
 .form-button:focus {
   background-color: #404bbf;
+}
+
+@media (min-resolution: 192dpi) {
+  .hero {
+    background-image: url(../images/people-office@2x.jpg);
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    max-width: 320px;
+  }
+
+  .logo {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .hero {
+    padding-top: 72px;
+    padding-bottom: 72px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .caption {
+    font-size: 36px;
+    margin-bottom: 72px;
+  }
+
+  .benefits {
+    padding: 96px 0;
+  }
+
+  .benefits-list {
+    flex-direction: column;
+    gap: 72px;
+  }
+
+  .benefits-link {
+    width: 100%;
+  }
+
+  .subject-benefits {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .text-benefits {
+    font-weight: 500;
+  }
+
+  .benefits-icon {
+    display: none;
+  }
+
+  .our-team {
+    padding: 96px 0;
+  }
+
+  .team-item {
+    flex-direction: column;
+    gap: 72px;
+  }
+
+  .name-list {
+    width: 100%;
+  }
+
+  .our-portfolio {
+    padding: 96px 0;
+  }
+
+  .portfolio-item {
+    flex-direction: column;
+  }
+
+  .portfolio-list {
+    width: 100%;
+  }
+
+  .footer-box {
+    padding: 96px 0;
+  }
+
+  .container-footer {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  .left-page {
+    margin: 0 auto;
+  }
+
+  .footer-text {
+    text-align: start;
+  }
+
+  .footer-form {
+    flex-direction: column;
+  }
+
+  .container-social-footer {
+    margin: 0 auto;
+  }
+
+  .footer-text-social {
+    margin-top: 72px;
+  }
+
+  .footer-social-list {
+    justify-content: center;
+  }
+
+  .footer-input {
+    width: 100%;
+    opacity: 0.3;
+  }
+
+  .footer-button {
+    margin: 0 auto;
+  }
 }
