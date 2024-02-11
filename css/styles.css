@@ -559,6 +559,13 @@ img {
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: none;
+}
+
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .modal {
@@ -797,6 +804,10 @@ img {
     max-width: 320px;
   }
 
+  .menu {
+    display: none;
+  }
+
   .logo {
     padding-top: 16px;
     padding-bottom: 16px;
@@ -879,7 +890,6 @@ img {
   .container-footer {
     display: block;
     text-align: center;
-    width: 100%;
   }
 
   .left-page {
@@ -913,5 +923,35 @@ img {
 
   .footer-button {
     margin: 0 auto;
+  }
+
+  .modal {
+    transform: translate(-50%, -100%);
+    padding: 72px 16px 24px;
+    width: 288px;
+  }
+
+  .container-checkbox {
+    display: flex;
+    width: 231px;
+    position: relative;
+    margin-left: 24px;
+  }
+
+  .checkbox-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -24px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+  .container-footer {
+    display: block;
+    text-align: center;
+  }
+  .footer-form {
+    flex-direction: column;
   }
 }
