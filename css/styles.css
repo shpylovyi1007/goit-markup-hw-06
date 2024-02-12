@@ -58,6 +58,24 @@ img {
 @media (max-width: 320px) {
   .container {
     max-width: 320px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    max-width: 1024px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -164,7 +182,6 @@ img {
     flex-direction: column;
     cursor: pointer;
     gap: 4px;
-    margin-right: 0;
     margin-left: auto;
   }
 
@@ -221,7 +238,45 @@ img {
     display: none;
   }
 
+  .mobile-menu {
+    display: none;
+  }
+
   .mobile-menu .icon-close {
+    display: none;
+  }
+
+  .logo {
+    margin-right: 120px;
+  }
+  .menu {
+    display: flex;
+  }
+
+  .address-list {
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px 0;
+    margin-left: 120px;
+  }
+
+  .address-link {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .mobile-menu .icon-close {
+    display: none;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  .mobile-menu {
     display: none;
   }
 
@@ -229,8 +284,40 @@ img {
     display: flex;
   }
 
+  .address {
+    margin-left: auto;
+  }
+
   .address-list {
-    flex-direction: column;
+    gap: 40px;
+    padding: 24px 0;
+  }
+}
+
+@media (min-width: 1025px) {
+  .mobile-menu .icon-close {
+    display: none;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+  }
+
+  .address {
+    margin-left: auto;
+  }
+
+  .address-list {
+    gap: 40px;
+    padding: 24px 0;
   }
 }
 
@@ -265,6 +352,45 @@ img {
   .hero {
     padding-top: 72px;
     padding-bottom: 72px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpg);
+    background-size: cover;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+  .hero {
+    padding-top: 112px;
+    padding-bottom: 112px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpg);
+    background-size: cover;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero {
+    padding-top: 112px;
+    padding-bottom: 112px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpg);
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1025px) {
+  .hero {
+    padding-top: 112px;
+    padding-bottom: 112px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -315,6 +441,12 @@ img {
   .caption {
     font-size: 36px;
     margin-bottom: 72px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+  .caption {
+    margin-bottom: 36px;
   }
 }
 
@@ -405,6 +537,35 @@ img {
 
   .benefits-icon {
     display: none;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+  .benefits {
+    padding: 96px 0;
+  }
+
+  .benefits-list {
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+
+  .benefits-link {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+
+  .benefits-icon {
+    display: none;
+  }
+
+  .subject-benefits {
+    font-size: 36px;
+    font-weight: 700;
+  }
+
+  .text-benefits {
+    font-weight: 500;
   }
 }
 
@@ -514,6 +675,21 @@ img {
   }
 }
 
+@media (min-width: 321px) and (max-width: 768px) {
+  .our-team {
+    padding: 96px 92px;
+  }
+
+  .team-item {
+    flex-wrap: wrap;
+    row-gap: 64px;
+  }
+
+  .name-list {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+}
+
 .our-portfolio {
   padding: 120px 0;
 }
@@ -596,6 +772,20 @@ img {
 
   .portfolio-list {
     width: 100%;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+  .our-portfolio {
+    padding: 96px 0;
+  }
+
+  .portfolio-item {
+    row-gap: 72px;
+  }
+
+  .portfolio-list {
+    flex-basis: calc((100% - 24px) / 2);
   }
 }
 
@@ -780,12 +970,38 @@ img {
 }
 
 @media (min-width: 321px) and (max-width: 768px) {
-  .container-footer {
-    display: block;
-    text-align: center;
+  .footer-box {
+    padding: 96px 92px;
   }
-  .footer-form {
+
+  .container-footer {
     flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .main-left-page {
+    display: flex;
+    margin-bottom: 72px;
+  }
+
+  .left-page {
+    margin-right: 24px;
+  }
+
+  .footer-input {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .main-left-page {
+    display: flex;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-left-page {
+    display: flex;
   }
 }
 
@@ -1034,8 +1250,8 @@ img {
 
 @media (max-width: 320px) {
   .modal {
-    transform: translate(-50%, -100%);
-    padding: 72px 16px 24px;
+    transform: translate(-50%, -43%);
+    padding: 72px 20px 20px;
     width: 288px;
   }
 
@@ -1052,7 +1268,4 @@ img {
     transform: translateY(-50%);
     left: -24px;
   }
-}
-
-@media (min-width: 321px) and (max-width: 768px) {
 }
