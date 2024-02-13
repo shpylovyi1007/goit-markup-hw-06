@@ -151,6 +151,13 @@ img {
 @media (min-width: 769px) {
   .address-list {
     padding: 24px 0;
+    margin-left: 199px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .address-list {
+    margin-left: 333px;
   }
 }
 
