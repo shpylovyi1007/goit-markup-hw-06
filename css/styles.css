@@ -155,12 +155,6 @@ img {
   }
 }
 
-@media (min-width: 1025px) {
-  .address-list {
-    margin-left: 333px;
-  }
-}
-
 .address-link {
   color: #434455;
   letter-spacing: 0.02em;
