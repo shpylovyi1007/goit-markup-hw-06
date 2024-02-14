@@ -205,15 +205,13 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 24px;
-    height: 24px;
     border: none;
     padding: 0;
     margin-left: auto;
     background-color: #fff;
   }
 
-  .icon {
+  .burger-icon {
     fill: #2f2f37;
   }
 
