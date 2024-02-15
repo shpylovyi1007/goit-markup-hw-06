@@ -80,12 +80,6 @@ img {
   }
 }
 
-@media (min-width: 1025px) {
-  .container {
-    max-width: 1158px;
-  }
-}
-
 .header {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
@@ -192,8 +186,9 @@ img {
   .logo {
     padding-top: 16px;
     padding-bottom: 16px;
+    margin: 0;
   }
-  .address {
+  .container-header .address {
     display: none;
   }
 
@@ -216,19 +211,27 @@ img {
   }
 
   .mobile-menu {
+    display: flex;
+    flex-direction: column;
     display: none;
     width: 100%;
-    min-height: 640px;
+    height: 100%;
     padding: 72px 24px 40px 16px;
     position: fixed;
     top: 0;
     left: 0;
     background-color: #fff;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .navigation-header-mobile {
+    margin-bottom: auto;
   }
 
   .navigation-list {
     flex-direction: column;
-    margin-bottom: 168px;
   }
 
   .active::after {
@@ -242,10 +245,14 @@ img {
     padding: 0%;
   }
 
+  .address-mobile {
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
   .address-list {
     flex-direction: column;
     gap: 24px;
-    margin-bottom: 40px;
   }
 
   .address-link {
@@ -280,16 +287,38 @@ img {
   }
 }
 
+.hero .container {
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
+
+@media (max-width: 320px) {
+  .hero .container {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+}
+
+@media (max-width: 320px) {
+  .hero .container {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+  .hero .container {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+}
+
 .hero {
   display: flex;
   width: 100%;
   max-width: 1158px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
   text-align: center;
-  padding-top: 188px;
-  padding-bottom: 188px;
   background-color: #2e2f42;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -309,8 +338,6 @@ img {
 
 @media (max-width: 320px) {
   .hero {
-    padding-top: 72px;
-    padding-bottom: 72px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -322,8 +349,6 @@ img {
 
 @media (min-width: 321px) and (max-width: 768px) {
   .hero {
-    padding-top: 112px;
-    padding-bottom: 112px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -335,8 +360,6 @@ img {
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .hero {
-    padding-top: 112px;
-    padding-bottom: 112px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -348,8 +371,6 @@ img {
 
 @media (min-width: 1025px) {
   .hero {
-    padding-top: 112px;
-    padding-bottom: 112px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -433,11 +454,6 @@ img {
   align-items: center;
   height: 112px;
   margin-bottom: 8px;
-}
-
-.icon {
-  margin-top: 24px;
-  margin-bottom: 24px;
 }
 
 .heading-benefits {
@@ -560,14 +576,10 @@ img {
 
 .social-list {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 24px;
   padding: 0 16px;
-}
-
-.social {
-  width: calc((100% - 72px) / 4);
 }
 
 .social-link {
@@ -613,18 +625,25 @@ img {
     width: 100%;
   }
 
-  .social-list {
+  .mobile-menu .social-list {
     padding: 0;
+    gap: 40px;
   }
+}
 
+@media (min-width: 321px) {
   .social {
-    flex-basis: calc((100% 120) / 4);
+    width: calc((100% - 72px) / 4);
   }
 }
 
 @media (min-width: 321px) and (max-width: 768px) {
   .our-team {
-    padding: 96px 92px;
+    padding: 96px 0;
+  }
+
+  .our-team .container {
+    width: 552px;
   }
 
   .team-item {
@@ -953,6 +972,9 @@ img {
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
   display: none;
 }
 
@@ -1210,6 +1232,6 @@ img {
 
 @media (max-width: 768px) {
   .modal {
-    transform: translate(-50%, -43%);
+    transform: translate(-50%, -50%);
   }
 }
