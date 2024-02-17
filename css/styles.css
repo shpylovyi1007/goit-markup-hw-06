@@ -874,6 +874,8 @@ img {
 
   .footer-text {
     text-align: start;
+    margin: 0 auto;
+    width: 100%;
   }
 
   .footer-form {
