@@ -55,28 +55,22 @@ img {
   padding-right: 15px;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 767px) {
   .container {
-    max-width: 320px;
+    max-width: 767px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   .container {
     padding-left: 16px;
     padding-right: 16px;
   }
 }
 
-@media (min-width: 321px) and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .container {
-    max-width: 1024px;
+    max-width: 1023px;
   }
 }
 
@@ -168,7 +162,7 @@ img {
   margin-right: 76px;
 }
 
-@media (min-width: 321px) {
+@media (min-width: 768px) {
   .mobile-menu {
     display: none;
   }
@@ -182,7 +176,7 @@ img {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 767px) {
   .logo {
     padding-top: 16px;
     padding-bottom: 16px;
@@ -263,7 +257,7 @@ img {
   }
 }
 
-@media (min-width: 321px) and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .logo {
     margin-right: 120px;
   }
@@ -280,32 +274,19 @@ img {
   }
 }
 
-@media (min-width: 769px) {
-  .address-list {
-    padding: 24px 0;
-  }
-}
-
 .hero .container {
   padding-top: 188px;
   padding-bottom: 188px;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 767px) {
   .hero .container {
     padding-top: 72px;
     padding-bottom: 72px;
   }
 }
 
-@media (max-width: 320px) {
-  .hero .container {
-    padding-top: 72px;
-    padding-bottom: 72px;
-  }
-}
-
-@media (min-width: 321px) and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .hero .container {
     padding-top: 112px;
     padding-bottom: 112px;
@@ -335,7 +316,7 @@ img {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 767px) {
   .hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -346,7 +327,7 @@ img {
   }
 }
 
-@media (min-width: 321px) and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -357,18 +338,7 @@ img {
   }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
-  .hero {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/people-office.jpg);
-    background-size: cover;
-  }
-}
-
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   .hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -416,14 +386,14 @@ img {
   margin-bottom: 48px;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 767px) {
   .caption {
     font-size: 36px;
     margin-bottom: 72px;
   }
 }
 
-@media (min-width: 321px) and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .caption {
     margin-bottom: 36px;
   }
@@ -485,7 +455,7 @@ img {
   margin-bottom: 8px;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 767px) {
   .benefits-list {
     flex-direction: column;
     gap: 72px;
@@ -502,7 +472,7 @@ img {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   .benefits {
     padding: 96px 0;
   }
@@ -516,7 +486,7 @@ img {
   }
 }
 
-@media (min-width: 321px) and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .benefits-list {
     flex-wrap: wrap;
     row-gap: 72px;
@@ -610,7 +580,7 @@ img {
   margin-bottom: 8px;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 767px) {
   .our-team {
     padding: 96px 0;
   }
@@ -630,13 +600,13 @@ img {
   }
 }
 
-@media (min-width: 321px) {
+@media (min-width: 768px) {
   .social {
     width: calc((100% - 72px) / 4);
   }
 }
 
-@media (min-width: 321px) and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .our-team {
     padding: 96px 0;
   }
@@ -724,7 +694,7 @@ img {
   align-self: stretch;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 767px) {
   .portfolio-item {
     flex-direction: column;
   }
@@ -734,7 +704,7 @@ img {
   }
 }
 
-@media (min-width: 321px) and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .portfolio-item {
     row-gap: 72px;
   }
@@ -744,7 +714,7 @@ img {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   .our-portfolio {
     padding: 96px 0;
   }
@@ -852,7 +822,7 @@ img {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   .footer-input {
     opacity: 0.3;
   }
@@ -888,7 +858,7 @@ img {
   fill: #ffffff;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 767px) {
   .footer-box {
     padding: 96px 0;
   }
@@ -931,7 +901,7 @@ img {
   }
 }
 
-@media (min-width: 321px) and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .footer-box {
     padding: 96px 92px;
   }
@@ -950,13 +920,13 @@ img {
   }
 }
 
-@media (min-width: 321px) {
+@media (min-width: 768px) {
   .main-left-page {
     display: flex;
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1024px) {
   .container-social-footer {
     margin-right: 80px;
   }
@@ -1208,7 +1178,7 @@ img {
   background-color: #404bbf;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 767px) {
   .modal {
     padding: 72px 20px 20px;
     width: 288px;
@@ -1229,7 +1199,7 @@ img {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   .modal {
     transform: translate(-50%, -50%);
   }
