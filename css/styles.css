@@ -1182,7 +1182,7 @@ img {
 
 @media (max-width: 767px) {
   .modal {
-    padding: 72px 20px 20px;
+    padding: 72px 16px 24px;
     width: 288px;
   }
 
